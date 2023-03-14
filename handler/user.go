@@ -119,3 +119,11 @@ func (h *userHandler) CheckEmailAvailability(c *gin.Context) {
 	return
 
 }
+
+func (h *userHandler) HelloWorld(c *gin.Context) {
+
+	response := "Hello World"
+	c.JSON(http.StatusOK, response)
+	return
+
+}
